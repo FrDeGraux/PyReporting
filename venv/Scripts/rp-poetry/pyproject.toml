@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "rp-poetry"
+version = "0.1.0"
+description = ""
+authors = ["franc <francoisdegraux@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rp_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+trading-ig = {extras = ["munch", "pandas", "tenacity"], version = "^0.0.19"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
